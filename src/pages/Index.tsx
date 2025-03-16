@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Map, Phone, Clock, MapPin, Car, Droplets, Brush, Zap, Wrench, Sparkles, Lightbulb } from "lucide-react";
@@ -292,8 +291,7 @@ const Index = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-gray-800">Horário de Funcionamento</h4>
-                  <p className="text-gray-600">Segunda a Sábado: 08:00 - 18:00</p>
-                  <p className="text-gray-600">Domingo: 08:00 - 13:00</p>
+                  <p className="text-gray-600">Segunda a Sábado: 08:30 - 17:30</p>
                 </div>
               </div>
             </div>
@@ -324,7 +322,7 @@ const Index = () => {
                 <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-blue-500"></span>
               </h3>
               <p className="text-gray-400">
-                GT Express Lava Rápido oferece serviços de lavagem e higienização automotiva com qualidade e agilidade. Estamos no mercado há mais de 5 anos, sempre priorizando a satisfação dos nossos clientes.
+                A GT Express Lava Rápido oferece serviços de lavagem e higienização automotiva com qualidade e agilidade. Sempre priorizamos a satisfação dos nossos clientes.
               </p>
             </div>
             
@@ -394,6 +392,12 @@ const Index = () => {
                     (11) 91136-9211
                   </a>
                 </li>
+                <li className="flex items-start">
+                  <Clock className="w-5 h-5 text-blue-500 mt-0.5 mr-2" />
+                  <span className="text-gray-400">
+                    Segunda a Sábado: 08:30 - 17:30
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -439,3 +443,4 @@ const Index = () => {
 };
 
 export default Index;
+
