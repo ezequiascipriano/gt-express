@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Map, Phone, Clock, Mail, MapPin } from "lucide-react";
+import { Map, Phone, Clock, MapPin, Car, Droplets, Brush, Zap, Wrench, Sparkles, Lightbulb } from "lucide-react";
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -129,14 +129,12 @@ const Index = () => {
             {/* Service 1 */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
               <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
+                <Car className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-600 mb-3">Lavagem Básica</h3>
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">Lavagem Convencional</h3>
                 <p className="text-gray-600">
-                  Limpeza externa do veículo, incluindo carroceria, rodas e pneus para manter seu carro com aparência renovada.
+                  Limpeza completa do seu veículo, garantindo aparência renovada e cuidado profissional.
                 </p>
               </div>
             </div>
@@ -144,14 +142,12 @@ const Index = () => {
             {/* Service 2 */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
               <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+                <Droplets className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-600 mb-3">Lavagem com Cera</h3>
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">Ducha com Secagem e Pretinho</h3>
                 <p className="text-gray-600">
-                  Além da lavagem completa, aplicamos cera de alta qualidade para proteção e brilho duradouro na pintura.
+                  Lavagem rápida com aplicação de pretinho nos pneus para um acabamento perfeito e brilhante.
                 </p>
               </div>
             </div>
@@ -159,14 +155,12 @@ const Index = () => {
             {/* Service 3 */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
               <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
+                <Brush className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-600 mb-3">Higienização</h3>
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">Higienização de Bancos</h3>
                 <p className="text-gray-600">
-                  Limpeza profunda do interior do veículo, eliminando ácaros, bactérias e odores indesejados para um ambiente saudável.
+                  Limpeza profunda dos bancos automotivos, eliminando ácaros, bactérias e odores indesejados.
                 </p>
               </div>
             </div>
@@ -174,14 +168,64 @@ const Index = () => {
             {/* Service 4 */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
               <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+                <Sparkles className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">Higienização de Teto</h3>
+                <p className="text-gray-600">
+                  Limpeza especializada do teto automotivo, removendo manchas e sujeiras para um interior renovado.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 5 */}
+            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
+              <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
+                <Zap className="w-16 h-16 text-white" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-blue-600 mb-3">Lavagem de Motor</h3>
                 <p className="text-gray-600">
-                  Limpeza especializada do compartimento do motor, removendo sujeira e resíduos para melhor desempenho e durabilidade.
+                  Limpeza especializada do compartimento do motor, removendo sujeira e resíduos para melhor desempenho.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 6 */}
+            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
+              <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
+                <Wrench className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">Restauração de Plásticos Externos</h3>
+                <p className="text-gray-600">
+                  Recuperação de plásticos externos do veículo, devolvendo cor e brilho para parachoques e molduras.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 7 */}
+            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
+              <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
+                <Sparkles className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">Restauração de Plásticos Internos</h3>
+                <p className="text-gray-600">
+                  Recuperação e hidratação dos plásticos internos do veículo, renovando seu interior com acabamento profissional.
+                </p>
+              </div>
+            </div>
+
+            {/* Service 8 */}
+            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:-translate-y-2">
+              <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
+                <Lightbulb className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">Restauração de Faróis</h3>
+                <p className="text-gray-600">
+                  Recuperação de faróis amarelados ou opacos, melhorando a visibilidade e a estética do seu veículo.
                 </p>
               </div>
             </div>
